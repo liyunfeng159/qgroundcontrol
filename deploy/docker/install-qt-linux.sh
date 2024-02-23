@@ -14,14 +14,14 @@ apt-get update
 apt-get install python3 python3-pip -y
 pip3 install aqtinstall
 #aqt install-qt ${QT_HOST} ${QT_TARGET} ${QT_VERSION} -O ${QT_PATH} -m ${QT_MODULES}
-apt install -qt ${QT_HOST} ${QT_TARGET} ${QT_VERSION} -O ${QT_PATH} -m qtbase
-apt install -qt ${QT_HOST} ${QT_TARGET} ${QT_VERSION} -O ${QT_PATH} -m qtcharts
-apt install -qt ${QT_HOST} ${QT_TARGET} ${QT_VERSION} -O ${QT_PATH} -m qtconnectivity
-apt install -qt ${QT_HOST} ${QT_TARGET} ${QT_VERSION} -O ${QT_PATH} -m qtlocation
-apt install -qt ${QT_HOST} ${QT_TARGET} ${QT_VERSION} -O ${QT_PATH} -m qtmultimedia
-apt install -qt ${QT_HOST} ${QT_TARGET} ${QT_VERSION} -O ${QT_PATH} -m qtpositioning
-apt install -qt ${QT_HOST} ${QT_TARGET} ${QT_VERSION} -O ${QT_PATH} -m qtserialport
-apt install -qt ${QT_HOST} ${QT_TARGET} ${QT_VERSION} -O ${QT_PATH} -m qtspeech
+apt install -qt ${QT_HOST} ${QT_TARGET} ${QT_VERSION} -d ${QT_PATH} -m qtbase
+apt install -qt ${QT_HOST} ${QT_TARGET} ${QT_VERSION} -d ${QT_PATH} -m qtcharts
+apt install -qt ${QT_HOST} ${QT_TARGET} ${QT_VERSION} -d ${QT_PATH} -m qtconnectivity
+apt install -qt ${QT_HOST} ${QT_TARGET} ${QT_VERSION} -d ${QT_PATH} -m qtlocation
+apt install -qt ${QT_HOST} ${QT_TARGET} ${QT_VERSION} -d ${QT_PATH} -m qtmultimedia
+apt install -qt ${QT_HOST} ${QT_TARGET} ${QT_VERSION} -d ${QT_PATH} -m qtpositioning
+apt install -qt ${QT_HOST} ${QT_TARGET} ${QT_VERSION} -d ${QT_PATH} -m qtserialport
+apt install -qt ${QT_HOST} ${QT_TARGET} ${QT_VERSION} -d ${QT_PATH} -m qtspeech
 
 echo "Remember to export the following to your PATH: ${QT_PATH}/${QT_VERSION}/*/bin"
 echo "export PATH=$(readlink -e ${QT_PATH}/${QT_VERSION}/*/bin/):PATH"
