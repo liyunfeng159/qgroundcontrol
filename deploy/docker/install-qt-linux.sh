@@ -5,7 +5,7 @@ QT_VERSION="${QT_VERSION:-6.6.1}"
 QT_PATH="${QT_PATH:-/opt/Qt}"
 QT_HOST="${QT_HOST:-linux}"
 QT_TARGET="${QT_TARGET:-desktop}"
-QT_MODULES="${QT_MODULES:-qtcharts}"
+QT_MODULES="${QT_MODULES:-qtcharts,qtconnectivity,qtlocation,qtmultimedia,qtpositioning,qtserialport,qtspeech}"
 
 # Exit immediately if a command exits with a non-zero status
 set -e
